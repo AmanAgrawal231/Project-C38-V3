@@ -78,10 +78,11 @@ function draw() {
     
     if(obstaclesGroup.isTouching(kangaroo)){
       collidedSound.play();
-      gameState = END;
+      kangaroo.scale= 0.1/2;
+      
     }
     if(shrubsGroup.isTouching(kangaroo)){
-
+      kangaroo.scale = 0.2
       shrubsGroup.destroyEach();
     }
   }
